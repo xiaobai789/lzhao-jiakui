@@ -39,10 +39,6 @@ public class DBUtils {
 	/**
 	 * 将准备的数据插入数据库中：默认在准备数据之前将对应的准备数据按照条件进行删除
 	 *
-	 * @param prepareDateMap
-	 * @param deleteBefPrepare
-	 *            准备前删除标记
-	 * @throws SQLException
 	 */
 	public static void prepare(Map<String, Object> prepareDateMap) {
 		prepare(prepareDateMap, true);
@@ -51,10 +47,7 @@ public class DBUtils {
 	/**
 	 * 将准备的数据插入数据库中
 	 *
-	 * @param prepareDateMap
-	 * @param deleteBefPrepare
-	 *            准备前删除标记
-	 * @throws SQLException
+	 * @param deleteBefPrepare 准备前删除标记
 	 */
 	public static void prepare(Map<String, Object> prepareDateMap, boolean deleteBefPrepare) {
 

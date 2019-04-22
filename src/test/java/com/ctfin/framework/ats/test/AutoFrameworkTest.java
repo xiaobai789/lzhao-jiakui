@@ -91,7 +91,7 @@ public class AutoFrameworkTest extends AbstractAutoTestFramework {
 			for (Annotation annotation : annotations) {
 				System.out.println(annotation.toString());
 			}
-			Test[] tests = method.getDeclaredAnnotationsByType(Test.class);
+			Annotation[] tests = method.getDeclaredAnnotations();
 			System.out.println(tests);
 
 		}
